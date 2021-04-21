@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sehwang <hsjung97@gmail.com>               +#+  +:+       +#+         #
+#    By: sehwang <sehwang@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/20 16:13:01 by sehwang           #+#    #+#              #
-#    Updated: 2021/04/20 18:58:30 by sehwang          ###   ########.fr        #
+#    Updated: 2021/04/21 17:43:49 by sehwang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ LXFLAGS = -lmlx -framework OpenGL -framework AppKit
 
 HEADER = cub3d.h
 
-SRC =  main
+SRC =  main key_press
 
 FIL = $(addsuffix .c, $(addprefix files/, $(SRC)))
 
@@ -31,6 +31,7 @@ $(NAME):$(OBJ)
 	$(CC) $(CFLAGS) $(LXFLAGS) -o $(NAME) $(OBJ)
 
 all: $(NAME)
+	./cub3D
 
 clean:
 	rm -rf $(OBJ)
