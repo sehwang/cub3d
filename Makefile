@@ -6,14 +6,14 @@
 #    By: sehwang <sehwang@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/20 16:13:01 by sehwang           #+#    #+#              #
-#    Updated: 2021/04/21 17:43:49 by sehwang          ###   ########.fr        #
+#    Updated: 2021/04/26 15:58:02 by sehwang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= cub3D
 
 CC			= gcc
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -fsanitize=address
 
 MLX = mlx
 
@@ -28,7 +28,7 @@ FIL = $(addsuffix .c, $(addprefix files/, $(SRC)))
 OBJ = $(FIL:.c=.o)
 
 $(NAME):$(OBJ)
-	$(CC) $(CFLAGS) $(LXFLAGS) -o $(NAME) $(OBJ)
+	$(CC) -L $(MLX) $(CFLAGS) $(LXFLAGS) -o $(NAME) $(OBJ)
 
 all: $(NAME)
 	./cub3D
