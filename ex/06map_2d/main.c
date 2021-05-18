@@ -129,7 +129,7 @@ int 	close(t_game *game)
 }
 
 void	game_init(t_game *game)
-{	
+{
 	int map[ROWS][COLS] = {
 	{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},

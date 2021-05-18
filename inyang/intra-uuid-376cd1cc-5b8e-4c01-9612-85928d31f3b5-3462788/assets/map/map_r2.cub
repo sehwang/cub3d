@@ -1,0 +1,11 @@
+R 150 150
+NO ./assets/texture/purplestone.xpm
+SO ./assets/texture/redbrick.xpm
+WE ./assets/texture/greystone.xpm
+EA ./assets/texture/bluestone.xpm
+S ./assets/texture/meer64.xpm
+F 23 8  , 230 ,135
+F 150,150,150
+111
+1S1
+111

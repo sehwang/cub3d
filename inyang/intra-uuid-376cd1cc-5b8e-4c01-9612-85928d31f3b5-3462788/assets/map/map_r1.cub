@@ -1,0 +1,16 @@
+R 1024 1024
+NO ./assets/texture/book64.xpm
+SO ./assets/texture/nam64.xpm 
+WE ./assets/texture/seo64.xpm
+EA ./assets/texture/dong64.xpm
+
+S ./assets/texture/mugoong.xpm
+F 0,0,255
+C 255,0,0
+
+111111111111
+1000000001111111
+10002000001 
+102000000W0111121
+10000020000000001
+11111111111111111
